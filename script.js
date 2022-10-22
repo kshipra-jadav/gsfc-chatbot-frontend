@@ -5,7 +5,7 @@ let botsend = document.querySelector("#chatapp-form")
 let querytxt = document.querySelector("#chatapp-input-text")
 let chatContainer = document.getElementById("chatapp-chat-container")
 
-setTimeout(() => loadingDone(), 1000)
+setTimeout(() => loadingDone(), 500)
 
 const URL = "https://gsfc-chatbot-backend.onrender.com/get-bot-ans"
 
@@ -60,7 +60,7 @@ async function firstClick() {
 		.item(0)
 		.remove()
 }
-function noop() {} //!! No Operation Function --> Required to only call the firstClick function once.
+function noop() { } //!! No Operation Function --> Required to only call the firstClick function once.
 
 function successfunc(result) {
 	let chatDiv = document.createElement("div")
