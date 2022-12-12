@@ -87,6 +87,7 @@ body {
   background: url("Chat bg.svg");
   background-color: #fff2df;
   object-fit: cover;
+  scrollbar-width: thin;
 }
 
 .chatapp-chat-message {
