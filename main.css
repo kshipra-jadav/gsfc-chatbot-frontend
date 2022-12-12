@@ -38,6 +38,7 @@ body {
 .chatapp-closed {
   margin-top: 20rem;
   opacity: 0;
+  visibility: hidden;
 }
 
 .chatapp-bot-info {
@@ -193,6 +194,29 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
   flex-basis: 0;
+  position: relative;
+}
+
+#bot-button::before {
+  content: "Hi, my name is Bot";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: max-content;
+  height: max-content;
+  transform: translate(-105%, -50%);
+  border-radius: 1rem;
+  background-color: #f89b1c;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  color: white;
+  transition: all 0.5s;
+  animation: tooltip 10s ease forwards;
+  animation-delay: 2s;
 }
 
 #bot-button img {
@@ -237,9 +261,37 @@ body {
   }
 }
 
+@keyframes tooltip {
+  0% {
+    transform: translate(-105%, -50%) rotate(-5deg);
+  }
+  2% {
+    transform: translate(-105%, -50%) rotate(5deg);
+  }
+  4% {
+    transform: translate(-105%, -50%) rotate(-5deg);
+  }
+  6% {
+    transform: translate(-105%, -50%) rotate(5deg);
+  }
+  8% {
+    transform: translate(-105%, -50%) rotate(0);
+  }
+  90% {
+    transform: translate(-105%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-105%, -120%);
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   #chatapp-container {
-    width: 95%;
+    width: 90%;
     padding: 1rem;
   }
 }

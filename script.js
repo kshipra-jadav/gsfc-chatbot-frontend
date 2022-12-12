@@ -13,8 +13,12 @@ function loadingDone() {
 	botBtn.disabled = false
 }
 
-botBtn.addEventListener("click", () => {
+//window on load
+window.onload = () => {
 	firstClick()
+}
+
+botBtn.addEventListener("click", () => {
 	chatApp.classList.toggle("chatapp-closed")
 })
 
