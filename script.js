@@ -20,6 +20,7 @@ window.onload = () => {
 
 botBtn.addEventListener("click", () => {
 	chatApp.classList.toggle("chatapp-closed")
+	chatApp.classList.toggle("p-event-none")
 })
 
 $("#chatapp-input-send-btn").click(processQuery)
