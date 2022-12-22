@@ -1,5 +1,6 @@
 let botBtn = document.getElementById("bot-button")
 let chatApp = document.getElementById("chatapp")
+let chatAppContainer = document.getElementById("chatapp-container")
 let botBtnImage = document.querySelector("#bot-button img")
 let botsend = document.querySelector("#chatapp-form")
 let querytxt = document.querySelector("#chatapp-input-text")
@@ -20,7 +21,7 @@ window.onload = () => {
 
 botBtn.addEventListener("click", () => {
 	chatApp.classList.toggle("chatapp-closed")
-	chatApp.classList.toggle("p-event-none")
+	chatAppContainer.classList.toggle("p-event-none")
 })
 
 $("#chatapp-input-send-btn").click(processQuery)
