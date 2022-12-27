@@ -200,7 +200,8 @@ body {
 }
 
 #bot-button::before {
-  content: "Hi, my name is Bot";
+  content: "Hi, I am SAARTHI \a How can i help you?";
+  white-space: pre;
   position: absolute;
   top: 50%;
   left: 0;
