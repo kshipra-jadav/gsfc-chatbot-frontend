@@ -8,7 +8,7 @@ let chatContainer = document.getElementById("chatapp-chat-container")
 
 setTimeout(() => loadingDone(), 500)
 
-const URL = "https://gsfc-chatbot-backend.onrender.com/get-bot-ans"
+const URL = "https://gsfc-chatbot-backend-24ns.onrender.com/get-bot-ans"
 
 function loadingDone() {
 	botBtn.disabled = false
