@@ -44,7 +44,7 @@ body {
 .chatapp-bot-info {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #fff2df;
+  /* border-bottom: 1px solid #fff2df; */
 }
 
 .chatapp-bot-info img {
@@ -301,4 +301,70 @@ body {
 
 .p-event-none {
   pointer-events: none;
+}
+
+
+
+#chatapp-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+
+.chatapp-option-btn {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 10.5px !important;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatapp-option-btn:hover {
+  background-color: #45a049;
+}
+
+
+.chatapp-clear-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px;
+}
+.chatapp-clear-btn:hover {
+  background-color: #e60000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.bot-avatar {
+  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(0, 165, 7, 0.4);
+  border-radius: 50%;
+}
+
+#clear-chat-btn{
+  height: 23px;
+  margin-top: 6px;
+  margin-left: -11px;
+  cursor: pointer;
 }

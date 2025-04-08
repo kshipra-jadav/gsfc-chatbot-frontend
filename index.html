@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
+
 <body>
     <div id="chatapp-container" class="p-event-none">
         <div id="chatapp" class="chatapp-closed">
             <div class="chatapp-bot-info">
-                <img src="BotIcon.svg" alt="botname">
+                <img src="BotIcon.svg" alt="botname" class="bot-avatar">
                 <div class="chatapp-bot-name">
                     <p>Saarthi</p>
                     <span></span>
                     <p>online</p>
                 </div>
+
+            </div>
+            <div id="chatapp-buttons">
+                <button class="chatapp-option-btn" data-query="admissions">Admissions</button>
+                <button class="chatapp-option-btn" data-query="courses">Courses</button>
+                <button class="chatapp-option-btn" data-query="fees">Fees</button>
+                <button class="chatapp-option-btn" data-query="faculty">Faculty</button>
+                <button class="chatapp-option-btn" data-query="events">Campus Events</button>
+                <button class="chatapp-option-btn" data-query="hostel">Hostel</button>
+                <button class="chatapp-option-btn" data-query="Admission Inquiry">Admission Inquiry</button>
+                <button class="chatapp-option-btn" data-query="contact">Contact Info</button>
             </div>
             <div id="chatapp-chat-container">
 
@@ -29,18 +42,22 @@
                     <input type="text" id="chatapp-input-text" placeholder="type your queries"></input>
                     <button type="submit" id="chatapp-input-send-btn">
                         <img src="Send.svg">
+
                     </button>
+                    <div >
+                        <img id="clear-chat-btn" src="clear_history.svg">
+                    </div>
                 </div>
             </div>
         </div>
-        <button disabled id="bot-button">
+        <button disabled id="bot-button" class="bot-avatar">
             <img alt="botname">
         </button>
     </div>
 
     <script defer>
-        
+
     </script>
 </body>
-</html>
 
+</html>
